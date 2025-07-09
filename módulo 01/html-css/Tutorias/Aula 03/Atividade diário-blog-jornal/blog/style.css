@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+
+/* 🎨 Paleta de Cores Laranja Dark */
+:root {
+  --bg-color: #1a120f; /* Fundo geral */
+  --primary: #ff7f50; /* Coral intenso */
+  --secondary: #f4a261; /* Laranja mais suave */
+  --accent: #ffcc80; /* Detalhes */
+  --text-color: #ffffff;
+  --card-bg: #2e1d18; /* Cards mais escuros */
+  --button-bg: #e76f51;
+  --button-hover: #ff8f65;
+}
+
+/* 🔄 Reset Básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Merriweather', serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.6;
+  padding: 1rem;
+}
+
+/* 🧱 Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+/* 🧠 Cabeçalho */
+header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+header h1 {
+  color: var(--accent);
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+header p {
+  font-size: 1.2rem;
+  color: var(--secondary);
+}
+
+/* 🧭 Navegação */
+.categorias ul {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+.categorias a {
+  text-decoration: none;
+  color: var(--accent);
+  padding: 0.4rem 0.8rem;
+  border-radius: 5px;
+  border: 1px solid var(--accent);
+  transition: background-color 0.3s ease;
+}
+
+.categorias a:hover {
+  background-color: var(--button-hover);
+  color: var(--bg-color);
+}
+
+/* 📰 Post Destaque */
+.post.destaque {
+  margin-bottom: 3rem;
+  border-left: 4px solid var(--primary);
+  padding-left: 1.5rem;
+}
+
+.post.destaque img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+/* 📌 Posts Recentes */
+.posts-recentes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+@media (max-width: 768px) {
+  .posts-recentes {
+    grid-template-columns: 1fr;
+  }
+}
+
+.post {
+  background-color: var(--card-bg);
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.4);
+  transition: transform 0.2s ease-in-out;
+}
+
+.post:hover {
+  transform: scale(1.02);
+}
+
+.post img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.post h3, .post h2 {
+  color: var(--accent);
+}
+
+.meta {
+  font-size: 0.9rem;
+  color: var(--secondary);
+  margin-bottom: 0.5rem;
+}
+
+/* 🔗 Botões e Links */
+a {
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  color: var(--accent);
+}
+
+/* 🔚 Rodapé */
+footer {
+  text-align: center;
+  margin-top: 4rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--primary);
+  color: var(--secondary);
+  font-size: 0.9rem;
+}

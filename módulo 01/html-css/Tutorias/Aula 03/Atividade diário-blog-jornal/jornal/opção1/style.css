@@ -1,0 +1,144 @@
+:root {
+  --cor-primaria: #FF6B6B;
+  --cor-secundaria: #FFD93D;
+  --fundo: #FFF8F0;
+  --texto: #2E2E2E;
+  --cinza-claro: #DADADA;
+  --branco: #FFFFFF;
+  --sombra: rgba(0, 0, 0, 0.06);
+}
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--fundo);
+  color: var(--texto);
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+h1, h2, h3 {
+  font-family: 'Merriweather', serif;
+  color: var(--texto);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Container principal */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+/* Cabeçalho */
+.cabecalho-jornal {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.titulo-principal {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--cor-primaria);
+}
+
+.subtitulo {
+  font-size: 1.2rem;
+  color: var(--texto);
+  opacity: 0.7;
+}
+
+.imagem-capa {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  margin-top: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px var(--sombra);
+}
+
+/* Seções */
+.jornal-section {
+  margin-bottom: 4rem;
+}
+
+.jornal-title {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  color: var(--cor-primaria);
+  border-left: 4px solid var(--cor-primaria);
+  padding-left: 1rem;
+}
+
+/* Reportagens */
+.reportagem {
+  background-color: var(--branco);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 6px 20px var(--sombra);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.reportagem:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px var(--sombra);
+}
+
+.reportagem h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0.75rem;
+  color: var(--cor-primaria);
+}
+
+.reportagem p {
+  color: var(--texto);
+  opacity: 0.85;
+  font-size: 1rem;
+}
+
+/* Imagens nas matérias */
+.imagem-materia {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+/* Rodapé */
+.rodape {
+  text-align: center;
+  padding: 2rem 0;
+  color: var(--texto);
+  opacity: 0.6;
+  font-size: 0.9rem;
+  border-top: 1px solid var(--cinza-claro);
+  margin-top: 4rem;
+}
+
+/* Responsivo */
+@media (min-width: 768px) {
+  .reportagem {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .imagem-materia {
+    width: 40%;
+  }
+
+  .texto-materia {
+    width: 60%;
+  }
+}

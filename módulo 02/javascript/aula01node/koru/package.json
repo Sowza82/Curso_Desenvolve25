@@ -1,0 +1,11 @@
+{
+  "name": "koru",
+  "version": "1.0.0",
+  "main": "aula01.js",
+  "scripts": {
+    "start": "node aula01.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

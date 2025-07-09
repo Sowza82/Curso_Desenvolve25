@@ -1,0 +1,6 @@
+# Ignora qualquer pasta node_modules em qualquer lugar do projeto
+node_modules/
+
+# Ignora arquivos de lock do npm
+package-lock.json
+
