@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
 
-/* 🎨 Paleta de Cores Laranja Dark */
+/* Paleta de Cores Laranja Dark */
 :root {
-  --bg-color: #1a120f; /* Fundo geral */
+  --bg-color: #1a120f;  /* Fundo geral */
   --primary: #ff7f50; /* Coral intenso */
   --secondary: #f4a261; /* Laranja mais suave */
   --accent: #ffcc80; /* Detalhes */
@@ -12,7 +12,7 @@
   --button-hover: #ff8f65;
 }
 
-/* 🔄 Reset Básico */
+/* Reset Básico */
 * {
   margin: 0;
   padding: 0;
@@ -27,14 +27,14 @@ body {
   padding: 1rem;
 }
 
-/* 🧱 Container */
+/* Container */
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 2rem 1rem;
 }
 
-/* 🧠 Cabeçalho */
+/* Cabeçalho */
 header {
   text-align: center;
   margin-bottom: 3rem;
@@ -51,7 +51,7 @@ header p {
   color: var(--secondary);
 }
 
-/* 🧭 Navegação */
+/* Navegação */
 .categorias ul {
   display: flex;
   justify-content: center;
@@ -75,7 +75,7 @@ header p {
   color: var(--bg-color);
 }
 
-/* 📰 Post Destaque */
+/* Post Destaque */
 .post.destaque {
   margin-bottom: 3rem;
   border-left: 4px solid var(--primary);
@@ -88,7 +88,7 @@ header p {
   margin-bottom: 1rem;
 }
 
-/* 📌 Posts Recentes */
+/* Posts Recentes */
 .posts-recentes {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -129,7 +129,7 @@ header p {
   margin-bottom: 0.5rem;
 }
 
-/* 🔗 Botões e Links */
+/* Botões e Links */
 a {
   color: var(--primary);
   text-decoration: none;
@@ -140,7 +140,7 @@ a:hover {
   color: var(--accent);
 }
 
-/* 🔚 Rodapé */
+/* Rodapé */
 footer {
   text-align: center;
   margin-top: 4rem;
