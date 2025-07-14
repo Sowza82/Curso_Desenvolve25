@@ -1,0 +1,50 @@
+body {
+  background-color: black;
+  color: red;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+h1 {
+  margin-top: 20px;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+hr {
+  border: 1px solid red;
+  width: 50%;
+  margin: 10px auto;
+}
+
+/* Para ambas as seções de navegação */
+nav {
+  margin: 30px auto;
+}
+
+/* Lista ordenada */
+#nav-ordenada ol {
+  display: inline-block;
+  text-align: left;
+  padding-left: 20px;
+}
+
+/* Lista não ordenada */
+#nav-nao-ordenada ul {
+  display: inline-block;
+  text-align: left;
+  padding-left: 20px;
+}
+
+/* Estilo dos itens */
+li {
+  margin: 5px 0;
+}
+
+/* Parágrafo final */
+p {
+  margin-top: 40px;
+  font-size: 1.2rem;
+}

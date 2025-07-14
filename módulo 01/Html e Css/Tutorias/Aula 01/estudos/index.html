@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Configuração Inicial do VS Code</title>
+
+  <!--
+    EXTENSÃO: Prettier - Code Formatter
+    - Finalidade: formata automaticamente seu código seguindo padrões de estilo (indentação, aspas, ponto e vírgula, etc.).
+    - Instalação:
+      1. Vá na aba de extensões (Ctrl + Shift + X).
+      2. Pesquise por "Prettier - Code Formatter".
+      3. Clique em "Instalar".
+    - Configuração recomendada:
+      No VS Code, vá em "Configurações" (Ctrl + ,), procure por "Format On Save" e marque a opção.
+      Isso fará com que o Prettier formate seu código toda vez que você salvar o arquivo.
+  -->
+
+  <!--
+    EXTENSÃO: Live Server
+    - Finalidade: cria um servidor local e recarrega o navegador automaticamente a cada alteração no código.
+    - Instalação:
+      1. Vá na aba de extensões (Ctrl + Shift + X).
+      2. Pesquise por "Live Server".
+      3. Clique em "Instalar".
+    - Uso:
+      1. Clique com o botão direito no seu arquivo HTML.
+      2. Selecione "Open with Live Server".
+      3. Seu navegador abrirá com o site rodando localmente.
+  -->
+
+  <!--
+    EXTENSÃO: STlink (ST-LINK Debugger)
+    - Observação: Essa extensão é voltada para desenvolvimento embarcado com microcontroladores STM32.
+    - Se você estiver desenvolvendo para web, pode ignorar essa parte.
+    - Caso esteja usando:
+      1. Instale a extensão "Cortex-Debug".
+      2. Configure o arquivo `launch.json` com os dados da placa e do ST-Link.
+      3. Conecte a placa e use o botão de debug (ícone de inseto com "play").
+  -->
+</head>
+<body>
+  <h1>Meu Ambiente de Desenvolvimento Web</h1>
+  <p>Esse é um exemplo de site criado após a configuração inicial do VS Code com extensões essenciais.</p>
+
+  <!--
+    COMO SUBIR UM SITE PELO TERMINAL (usando um servidor local):
+
+    Se você não estiver usando o Live Server e quiser subir um servidor simples pelo terminal, siga esses passos:
+
+    1. Abra o terminal no VS Code (Ctrl + `).
+    2. Navegue até a pasta onde está seu arquivo HTML usando o comando 'cd'.
+       Exemplo: cd meu-projeto
+    3. Se você tem o Node.js instalado, pode subir um servidor com:
+       npx serve
+       ou
+       npx http-server
+
+    4. Se estiver usando Python instalado:
+       python3 -m http.server
+       ou no Windows:
+       python -m http.server
+
+    O terminal mostrará um link, geralmente http://localhost:8000, que você pode abrir no navegador.
+  -->
+
+  <p>Com as extensões certas e o terminal configurado, o processo de desenvolvimento fica muito mais prático.</p>
+</body>
+</html>
